@@ -1,0 +1,54 @@
+{
+  "name": "gatsby-personal-starter",
+  "private": true,
+  "description": "My personal gatsby starter",
+  "version": "1.0.0",
+  "license": "MIT",
+  "prettier": "@darwintantuco/prettier-config",
+  "eslintConfig": {
+    "extends": [
+      "@darwintantuco/eslint-config"
+    ]
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "prettier:check": "prettier --list-different \"**/*.{scss,ts,tsx,json,md}\"",
+    "prettier:fix": "prettier --write \"**/*.{scss,ts,tsx,json,md}\"",
+    "lint:js": "eslint 'src/**/*.{ts,tsx}'",
+    "lint:css": "stylelint 'src/**/*.{css,scss}'",
+    "lint:all": "run-p prettier:check lint:js lint:css"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn lint:all"
+    }
+  },
+  "dependencies": {
+    "gatsby": "^2.13.73",
+    "gatsby-plugin-postcss": "^2.1.6",
+    "gatsby-plugin-react-helmet": "^3.1.6",
+    "gatsby-plugin-sass": "^2.1.13",
+    "gatsby-plugin-typescript": "^2.3.1",
+    "modularscale-sass": "^3.0.8",
+    "node-sass": "^4.12.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "sanitize.css": "^11.0.0"
+  },
+  "devDependencies": {
+    "@darwintantuco/eslint-config": "^1.0.2",
+    "@darwintantuco/prettier-config": "^1.0.1",
+    "@darwintantuco/stylelint-config": "^1.0.2",
+    "@types/react-helmet": "^5.0.15",
+    "husky": "^4.2.5",
+    "npm-run-all": "^4.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darwintantuco/gatsby-personal-starter"
+  }
+}
