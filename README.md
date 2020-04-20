@@ -1,7 +1,3 @@
-# gatsby-personal-starter
+# notes
 
-## Usage
-
-```
-gatsby new my-app https://github.com/darwintantuco/gatsby-personal-starter
-```
+![Node.js CI](https://github.com/darwintantuco/notes/workflows/Node.js%20CI/badge.svg)

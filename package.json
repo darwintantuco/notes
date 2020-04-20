@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-personal-starter",
+  "name": "notes",
   "private": true,
-  "description": "My personal gatsby starter",
+  "description": "My personal notes",
   "version": "1.0.0",
   "license": "MIT",
   "prettier": "@darwintantuco/prettier-config",
@@ -49,6 +49,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/darwintantuco/gatsby-personal-starter"
+    "url": "https://github.com/darwintantuco/notes"
   }
 }
