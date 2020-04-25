@@ -3,10 +3,13 @@
 
 .container {
   margin: 16% 8%;
+  display: flex;
+  flex-direction: column-reverse;
 
   @media (min-width: $viewport-12) {
     margin: 8% auto;
     width: 100%;
     max-width: $container-size;
+    flex-direction: row;
   }
 }
