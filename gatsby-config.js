@@ -5,11 +5,13 @@
  */
 
 module.exports = {
+  pathPrefix: `/notes`,
   plugins: [
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-postcss',
     'gatsby-plugin-typescript',
+    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -92,5 +94,4 @@ module.exports = {
       },
     },
   ],
-  pathPrefix: `/notes`,
 }
