@@ -2,11 +2,11 @@
 date: '2020-04-25'
 ---
 
-## Testing
+# Testing
 
-### @testing-library/react
+## @testing-library/react
 
-#### Basic test
+### Basic test
 
 ```javascript
 import { cleanup, render } from '@testing-library/react'
@@ -25,7 +25,7 @@ describe('<SubmitButton />', () => {
 })
 ```
 
-#### Testing non existing element
+### Testing non existing element
 
 Use `queryBy*`, `getBy*` throws an error if nothing is found.
 
@@ -46,7 +46,7 @@ describe('<SubmitButton />', () => {
 })
 ```
 
-#### Testing `useEffect` and mocking an api response
+### Testing `useEffect` and mocking an api response
 
 ```javascript
 import { cleanup, render, wait } from '@testing-library/react'
