@@ -1,6 +1,6 @@
 ---
-title: 'Rails Migration'
-path: '/rails-migration'
+title: 'Rails Migrations'
+path: '/rails-migrations'
 date: '2020-04-25'
 ---
 
