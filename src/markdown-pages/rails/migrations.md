@@ -4,7 +4,7 @@ path: '/rails-migrations'
 date: '2020-04-25'
 ---
 
-## Creating table with association
+### Creating table with association
 
 ```shell
 $ rails generate migration CreateAdminTodos
@@ -25,7 +25,7 @@ class CreateAdminTodos < ActiveRecord::Migration[6.0]
 end
 ```
 
-## Updating existing table
+### Updating existing table
 
 ```ruby
 class SomeUpdates < ActiveRecord::Migration[6.0]

@@ -9,7 +9,7 @@ export default function Template({ data }): JSX.Element {
 
   return (
     <Layout>
-      <h1>{frontmatter.title}</h1>
+      <h2>{frontmatter.title}</h2>
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <Link to='/'> back </Link>
     </Layout>

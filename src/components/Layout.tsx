@@ -12,7 +12,7 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps): JSX.Element => (
   <div className={styles.container}>
     <Sidebar />
-    <main>{children}</main>
+    <main className={styles.main}>{children}</main>
   </div>
 )
 
