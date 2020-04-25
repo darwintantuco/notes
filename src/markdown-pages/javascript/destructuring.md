@@ -4,7 +4,7 @@ path: '/javascript-destructuring'
 date: '2020-04-25'
 ---
 
-## Array
+### Array
 
 ```javascript
 const numbers = [1, 2, 3]
@@ -13,7 +13,7 @@ const [one, two, three] = numbers
 const [a, b, ...rest] = [1, 2, 3, 4, 5]
 ```
 
-## Object
+### Object
 
 ```javascript
 const person = {
