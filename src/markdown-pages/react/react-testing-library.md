@@ -8,8 +8,10 @@ date: '2020-04-25'
 ## Usage
 
 ```
-yarn add @testing-library/react jest --dev
+yarn add @testing-library/react --dev
 ```
+
+You also need to configure a test runner like [jest](https://jestjs.io/)
 
 ## Basic test
 
