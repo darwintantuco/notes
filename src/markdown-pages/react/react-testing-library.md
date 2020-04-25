@@ -1,5 +1,5 @@
 ---
-path 'react/react-testing-library
+path: '/react-testing-library'
 date: '2020-04-25'
 ---
 
