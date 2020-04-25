@@ -1,12 +1,17 @@
 ---
+path 'react/react-testing-library
 date: '2020-04-25'
 ---
 
-# Testing
+# React Testing Library
 
-## @testing-library/react
+## Usage
 
-### Basic test
+```
+yarn add @testing-library/react jest --dev
+```
+
+## Basic test
 
 ```javascript
 import { cleanup, render } from '@testing-library/react'
@@ -25,7 +30,7 @@ describe('<SubmitButton />', () => {
 })
 ```
 
-### Testing non existing element
+## Testing non existing element
 
 Use `queryBy*`, `getBy*` throws an error if nothing is found.
 
@@ -46,7 +51,7 @@ describe('<SubmitButton />', () => {
 })
 ```
 
-### Testing `useEffect` and mocking an api response
+## Testing `useEffect` and mocking an api response
 
 ```javascript
 import { cleanup, render, wait } from '@testing-library/react'

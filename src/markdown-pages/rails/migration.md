@@ -1,4 +1,5 @@
 ---
+path: '/rails/migration'
 date: '2020-04-25'
 ---
 

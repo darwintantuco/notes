@@ -1,4 +1,5 @@
 ---
+path: '/javascript/destructuring'
 date: '2020-04-25'
 ---
 
