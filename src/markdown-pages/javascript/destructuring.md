@@ -1,9 +1,8 @@
 ---
-path: '/javascript/destructuring'
+title: 'Javascript Destructuring'
+path: '/javascript-destructuring'
 date: '2020-04-25'
 ---
-
-# Destructuring
 
 ## Array
 

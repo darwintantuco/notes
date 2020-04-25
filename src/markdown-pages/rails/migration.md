@@ -1,9 +1,8 @@
 ---
-path: '/rails/migration'
+title: 'Rails Migration'
+path: '/rails-migration'
 date: '2020-04-25'
 ---
-
-# Migration
 
 ## Creating table with association
 

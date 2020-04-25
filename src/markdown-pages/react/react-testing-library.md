@@ -1,9 +1,8 @@
 ---
+title: 'React Testing Library'
 path: '/react-testing-library'
 date: '2020-04-25'
 ---
-
-# React Testing Library
 
 ## Usage
 
