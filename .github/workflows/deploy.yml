@@ -23,7 +23,7 @@ jobs:
     - name: Install dependencies and build
       run: |
         yarn --frozen--lockfile
-        gatsby build --prefix-paths
+        yarn build:githubpages
 
     - name: Deploy to github pages
       uses: JamesIves/github-pages-deploy-action@releases/v3
