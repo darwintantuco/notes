@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import NoteLink from '../components/NoteLink'
 
@@ -27,8 +27,8 @@ const Sidebar = (): JSX.Element => {
     }
   `)
 
-  const topics = {}
   /* Works now but not ideal, fix soon */
+  const topics = {}
   edges.forEach((edge) => {
     if (topics[edge.node.frontmatter.topic] === undefined) {
       topics[edge.node.frontmatter.topic] = [
