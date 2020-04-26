@@ -10,7 +10,7 @@ date: '2020-04-25'
 yarn add @testing-library/react --dev
 ```
 
-You also need to configure a test runner like [jest](https://jestjs.io/)
+You also need to configure a test runner, preferably [jest](https://jestjs.io/).
 
 ### Basic test
 
