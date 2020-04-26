@@ -1,6 +1,7 @@
 ---
 title: 'React Testing Library'
-path: '/react-testing-library'
+topic: 'React'
+path: '/react/react-testing-library'
 date: '2020-04-25'
 ---
 

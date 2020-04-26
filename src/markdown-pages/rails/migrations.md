@@ -1,6 +1,7 @@
 ---
 title: 'Rails Migrations'
-path: '/rails-migrations'
+topic: 'Rails'
+path: '/rails/migrations'
 date: '2020-04-25'
 ---
 
