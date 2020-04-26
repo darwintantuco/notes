@@ -22,17 +22,27 @@ const person = {
 }
 
 const { name, age } = person
+```
 
-// setting default value
+#### Setting a default value
+
+```javascript
+const person = {
+  name: 'Tony Stark',
+  age: 30,
+}
 const { name = 'Tony', age = 25 } = person
+```
 
+#### Renaming a variable
+
+```javascript
 const report = {
   id: 200,
   status: 'resolved',
   message: { id: '2', text: 'Awesome text' },
 }
 
-// renaming
 const {
   status,
   message: { id: messageId },

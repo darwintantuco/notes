@@ -7,9 +7,12 @@
   flex-direction: column-reverse;
 
   @media (min-width: $viewport-12) {
-    margin: 64px 128px;
-    width: 100%;
+    margin: 64px 360px;
     max-width: $container-size;
     flex-direction: row;
   }
+}
+
+.main {
+  max-width: 864px;
 }
