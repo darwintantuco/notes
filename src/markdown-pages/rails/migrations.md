@@ -1,5 +1,5 @@
 ---
-title: 'Rails Migrations'
+title: 'Migrations'
 topic: 'Rails'
 path: '/rails/migrations'
 date: '2020-04-25'

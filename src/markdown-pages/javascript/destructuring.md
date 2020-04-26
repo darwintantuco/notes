@@ -1,5 +1,5 @@
 ---
-title: 'Javascript Destructuring'
+title: 'Destructuring'
 topic: 'Javascript'
 path: '/javascript/destructuring'
 date: '2020-04-25'
