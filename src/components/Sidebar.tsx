@@ -19,6 +19,7 @@ const Sidebar = (): JSX.Element => {
               date(formatString: "MMMM DD, YYYY")
               path
               title
+              topic
             }
           }
         }
@@ -26,11 +27,36 @@ const Sidebar = (): JSX.Element => {
     }
   `)
 
-  const Notes = edges.map((edge) => (
-    <NoteLink key={edge.node.id} post={edge.node} />
-  ))
+  /* Works now but not ideal, fix soon */
+  const topics = {}
+  edges.forEach((edge) => {
+    if (topics[edge.node.frontmatter.topic] === undefined) {
+      topics[edge.node.frontmatter.topic] = [
+        <NoteLink key={edge.node.id} post={edge.node} />,
+      ]
+    } else {
+      topics[edge.node.frontmatter.topic].push(
+        <NoteLink key={edge.node.id} post={edge.node} />
+      )
+    }
+  })
 
-  return <aside className={styles.sidebar}>{Notes}</aside>
+  return (
+    <aside className={styles.sidebar}>
+      {Object.keys(topics).map((topic, i) => {
+        return (
+          <div key={i} className={styles.topic}>
+            {topic}
+            <ul className={styles.subtopics}>
+              {topics[topic].map((subtopic, i) => {
+                return <li key={i}>{subtopic}</li>
+              })}
+            </ul>
+          </div>
+        )
+      })}
+    </aside>
+  )
 }
 
 export default Sidebar

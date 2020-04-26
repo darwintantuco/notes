@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 
@@ -11,7 +11,6 @@ export default function Template({ data }): JSX.Element {
     <Layout>
       <h2>{frontmatter.title}</h2>
       <div dangerouslySetInnerHTML={{ __html: html }} />
-      <Link to='/'> back </Link>
     </Layout>
   )
 }
