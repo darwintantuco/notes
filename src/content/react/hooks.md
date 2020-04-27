@@ -1,6 +1,7 @@
 ---
-title: 'Hooks'
+title: 'React Hooks'
 topic: 'React'
+nav_title: 'Hooks'
 path: '/react/hooks'
 date: '2020-04-27'
 ---

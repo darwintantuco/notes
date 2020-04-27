@@ -20,6 +20,7 @@ const Sidebar = (): JSX.Element => {
               path
               title
               topic
+              nav_title
             }
           }
         }

@@ -1,6 +1,7 @@
 ---
 title: 'Destructuring'
 topic: 'Javascript'
+nav_title: 'Destructuring'
 path: '/javascript/destructuring'
 date: '2020-04-25'
 ---
