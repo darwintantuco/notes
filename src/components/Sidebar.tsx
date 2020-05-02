@@ -46,8 +46,11 @@ const Sidebar = (): JSX.Element => {
     <aside className={styles.sidebar}>
       {Object.keys(topics).map((topic, i) => {
         return (
-          <div key={i} className={styles.topic}>
-            {topic}
+          <div key={i}>
+            <label htmlFor={topic} className={styles.topic}>
+              {topic}
+            </label>
+            <input type='checkbox' id={topic} className={styles.checkbox} />
             <ul className={styles.subtopics}>
               {topics[topic].map((subtopic, i) => {
                 return <li key={i}>{subtopic}</li>

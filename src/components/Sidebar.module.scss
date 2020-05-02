@@ -11,8 +11,17 @@
   }
 }
 
+.checkbox {
+  display: none;
+}
+
 .subtopics {
   list-style-type: none;
   margin: 0 0 8px 0;
   padding-left: 16px;
+  display: none;
+}
+
+.checkbox:checked + .subtopics {
+  display: block;
 }
