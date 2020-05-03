@@ -1,10 +1,20 @@
 import React from 'react'
 
+import { Layout, PageHeader } from 'antd'
+
 const IndexPage = (): JSX.Element => {
+  const { Content } = Layout
+
   return (
     <>
-      <h2> Notes </h2>
-      <p> Collection of notes I find useful in day to day work. </p>
+      <PageHeader title='Notes' />
+
+      <Content
+        style={{ margin: '16px 24px' }}
+        className='site-layout-background'
+      >
+        <p> Collection of notes I find useful in day to day work. </p>
+      </Content>
     </>
   )
 }

@@ -5,7 +5,12 @@ import NoteLink from '../components/NoteLink'
 
 import styles from './Sidebar.module.scss'
 
+import { Layout, Menu } from 'antd'
+
 const Sidebar = (): JSX.Element => {
+  const { Sider } = Layout
+  const { SubMenu } = Menu
+
   const {
     allMarkdownRemark: { edges },
   } = useStaticQuery(graphql`
@@ -32,33 +37,33 @@ const Sidebar = (): JSX.Element => {
   edges.forEach((edge) => {
     if (categories[edge.node.frontmatter.category] === undefined) {
       categories[edge.node.frontmatter.category] = [
-        <NoteLink key={edge.node.id} post={edge.node} />,
+        {
+          id: edge.node.id,
+          node: <NoteLink key={edge.node.id} post={edge.node} />,
+        },
       ]
     } else {
-      categories[edge.node.frontmatter.category].push(
-        <NoteLink key={edge.node.id} post={edge.node} />
-      )
+      categories[edge.node.frontmatter.category].push({
+        id: edge.node.id,
+        node: <NoteLink key={edge.node.id} post={edge.node} />,
+      })
     }
   })
 
   return (
-    <aside className={styles.sidebar}>
-      {Object.keys(categories).map((category, i) => {
-        return (
-          <div key={i}>
-            <label htmlFor={category} className={styles.category}>
-              {category}
-            </label>
-            <input type='checkbox' id={category} className={styles.checkbox} />
-            <ul className={styles.topics}>
+    <Sider width='300' breakpoint='lg' collapsedWidth='0'>
+      <Menu mode='inline' style={{ height: '100%', paddingTop: '16px' }}>
+        {Object.keys(categories).map((category, i) => {
+          return (
+            <SubMenu key={i} title={category}>
               {categories[category].map((topic, i) => {
-                return <li key={i}>{topic}</li>
+                return <Menu.Item key={topic.id}> {topic.node}</Menu.Item>
               })}
-            </ul>
-          </div>
-        )
-      })}
-    </aside>
+            </SubMenu>
+          )
+        })}
+      </Menu>
+    </Sider>
   )
 }
 

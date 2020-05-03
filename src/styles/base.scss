@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Quicksand:300&display=swap');
 
 @import './vendor.scss';
 @import './variables.scss';
@@ -7,9 +7,9 @@ html,
 body {
   @include font-size(1);
 
-  font-family: $base-font;
-  color: $text-main;
-  background: $main-background;
+  // font-family: $base-font;
+  // color: $text-main;
+  // background: $main-background;
 }
 
 a {
