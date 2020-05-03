@@ -99,5 +99,6 @@ module.exports = {
         component: require.resolve(`./src/components/Layout.tsx`),
       },
     },
+    'gatsby-plugin-antd',
   ],
 }
