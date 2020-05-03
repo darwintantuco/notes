@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{QeBL:function(e,t,n){"use strict";n.r(t);n("BEjP");var a=n("bf48"),l=(n("M7k7"),n("Ol7k")),o=n("q1tI"),r=n.n(o);t.default=function(){var e=l.a.Content;return r.a.createElement(r.a.Fragment,null,r.a.createElement(a.a,{title:"Notes"}),r.a.createElement(e,{style:{margin:"16px 24px"},className:"site-layout-background"},r.a.createElement("p",null," Collection of notes I find useful in day to day work. ")))}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-6db35cf50c26cd86b6f3.js.map
