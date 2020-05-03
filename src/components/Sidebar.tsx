@@ -3,9 +3,12 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import NoteLink from '../components/NoteLink'
 
-import styles from './Sidebar.module.scss'
+import { Layout, Menu } from 'antd'
 
 const Sidebar = (): JSX.Element => {
+  const { Sider } = Layout
+  const { SubMenu } = Menu
+
   const {
     allMarkdownRemark: { edges },
   } = useStaticQuery(graphql`
@@ -19,8 +22,7 @@ const Sidebar = (): JSX.Element => {
               date(formatString: "MMMM DD, YYYY")
               path
               title
-              topic
-              nav_title
+              category
             }
           }
         }
@@ -29,34 +31,37 @@ const Sidebar = (): JSX.Element => {
   `)
 
   /* Works now but not ideal, fix soon */
-  const topics = {}
+  const categories = {}
   edges.forEach((edge) => {
-    if (topics[edge.node.frontmatter.topic] === undefined) {
-      topics[edge.node.frontmatter.topic] = [
-        <NoteLink key={edge.node.id} post={edge.node} />,
+    if (categories[edge.node.frontmatter.category] === undefined) {
+      categories[edge.node.frontmatter.category] = [
+        {
+          id: edge.node.id,
+          node: <NoteLink key={edge.node.id} post={edge.node} />,
+        },
       ]
     } else {
-      topics[edge.node.frontmatter.topic].push(
-        <NoteLink key={edge.node.id} post={edge.node} />
-      )
+      categories[edge.node.frontmatter.category].push({
+        id: edge.node.id,
+        node: <NoteLink key={edge.node.id} post={edge.node} />,
+      })
     }
   })
 
   return (
-    <aside className={styles.sidebar}>
-      {Object.keys(topics).map((topic, i) => {
-        return (
-          <div key={i} className={styles.topic}>
-            {topic}
-            <ul className={styles.subtopics}>
-              {topics[topic].map((subtopic, i) => {
-                return <li key={i}>{subtopic}</li>
+    <Sider width='300' breakpoint='lg' collapsedWidth='0' theme='light'>
+      <Menu mode='inline' style={{ height: '100%', paddingTop: '16px' }}>
+        {Object.keys(categories).map((category, i) => {
+          return (
+            <SubMenu key={i} title={category}>
+              {categories[category].map((topic) => {
+                return <Menu.Item key={topic.id}> {topic.node}</Menu.Item>
               })}
-            </ul>
-          </div>
-        )
-      })}
-    </aside>
+            </SubMenu>
+          )
+        })}
+      </Menu>
+    </Sider>
   )
 }
 

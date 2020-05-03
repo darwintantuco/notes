@@ -1,17 +1,26 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import Layout from '../components/Layout'
+import { Layout, PageHeader } from 'antd'
 
 export default function Template({ data }): JSX.Element {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
 
+  const { Content } = Layout
   return (
-    <Layout>
-      <h2>{frontmatter.title}</h2>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-    </Layout>
+    <>
+      <PageHeader title={frontmatter.title} />
+      <Content
+        style={{ margin: '16px 24px' }}
+        className='site-layout-background'
+      >
+        <div
+          style={{ width: 'fit-content' }}
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
+      </Content>
+    </>
   )
 }
 
@@ -23,6 +32,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        category
       }
     }
   }
