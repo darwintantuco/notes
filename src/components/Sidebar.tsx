@@ -49,7 +49,7 @@ const Sidebar = (): JSX.Element => {
   })
 
   return (
-    <Sider width='300' breakpoint='lg' collapsedWidth='0'>
+    <Sider width='300' breakpoint='lg' collapsedWidth='0' theme='light'>
       <Menu mode='inline' style={{ height: '100%', paddingTop: '16px' }}>
         {Object.keys(categories).map((category, i) => {
           return (
