@@ -1,7 +1,6 @@
 ---
+category: 'Javascript'
 title: 'Promises'
-topic: 'Javascript'
-nav_title: 'Promises'
 path: '/javascript/promises'
 date: '2020-04-27'
 ---

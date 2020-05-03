@@ -15,13 +15,13 @@
   display: none;
 }
 
-.subtopics {
+.topics {
   list-style-type: none;
   margin: 0 0 8px 0;
   padding-left: 16px;
   display: none;
 }
 
-.checkbox:checked + .subtopics {
+.checkbox:checked + .topics {
   display: block;
 }

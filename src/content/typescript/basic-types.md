@@ -1,8 +1,8 @@
 ---
-title: 'Typescript Basic Types'
-topic: 'Typescript'
-nav_title: 'Basic types'
+category: 'Typescript'
+title: 'Basic Types'
 path: '/typescript/basic-types'
+date: '2020-04-27'
 ---
 
 ### Boolean

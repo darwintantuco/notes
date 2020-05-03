@@ -1,7 +1,6 @@
 ---
+category: 'CSS'
 title: 'Adding CSS'
-topic: 'CSS'
-nav_title: 'Adding CSS'
 path: '/css/adding-css'
 date: '2020-04-27'
 ---

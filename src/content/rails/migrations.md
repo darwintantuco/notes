@@ -1,7 +1,6 @@
 ---
-title: 'Rails Migrations'
-topic: 'Rails'
-nav_title: 'Migrations'
+category: 'Rails'
+title: 'Migrations'
 path: '/rails/migrations'
 date: '2020-04-25'
 ---

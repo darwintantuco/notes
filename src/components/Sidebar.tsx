@@ -19,8 +19,7 @@ const Sidebar = (): JSX.Element => {
               date(formatString: "MMMM DD, YYYY")
               path
               title
-              topic
-              nav_title
+              category
             }
           }
         }
@@ -29,14 +28,14 @@ const Sidebar = (): JSX.Element => {
   `)
 
   /* Works now but not ideal, fix soon */
-  const topics = {}
+  const categories = {}
   edges.forEach((edge) => {
-    if (topics[edge.node.frontmatter.topic] === undefined) {
-      topics[edge.node.frontmatter.topic] = [
+    if (categories[edge.node.frontmatter.category] === undefined) {
+      categories[edge.node.frontmatter.category] = [
         <NoteLink key={edge.node.id} post={edge.node} />,
       ]
     } else {
-      topics[edge.node.frontmatter.topic].push(
+      categories[edge.node.frontmatter.category].push(
         <NoteLink key={edge.node.id} post={edge.node} />
       )
     }
@@ -44,16 +43,16 @@ const Sidebar = (): JSX.Element => {
 
   return (
     <aside className={styles.sidebar}>
-      {Object.keys(topics).map((topic, i) => {
+      {Object.keys(categories).map((category, i) => {
         return (
           <div key={i}>
-            <label htmlFor={topic} className={styles.topic}>
-              {topic}
+            <label htmlFor={category} className={styles.category}>
+              {category}
             </label>
-            <input type='checkbox' id={topic} className={styles.checkbox} />
-            <ul className={styles.subtopics}>
-              {topics[topic].map((subtopic, i) => {
-                return <li key={i}>{subtopic}</li>
+            <input type='checkbox' id={category} className={styles.checkbox} />
+            <ul className={styles.topics}>
+              {categories[category].map((topic, i) => {
+                return <li key={i}>{topic}</li>
               })}
             </ul>
           </div>
