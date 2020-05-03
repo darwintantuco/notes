@@ -3,8 +3,6 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import NoteLink from '../components/NoteLink'
 
-import styles from './Sidebar.module.scss'
-
 import { Layout, Menu } from 'antd'
 
 const Sidebar = (): JSX.Element => {
@@ -56,7 +54,7 @@ const Sidebar = (): JSX.Element => {
         {Object.keys(categories).map((category, i) => {
           return (
             <SubMenu key={i} title={category}>
-              {categories[category].map((topic, i) => {
+              {categories[category].map((topic) => {
                 return <Menu.Item key={topic.id}> {topic.node}</Menu.Item>
               })}
             </SubMenu>

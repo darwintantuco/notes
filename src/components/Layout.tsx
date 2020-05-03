@@ -1,11 +1,10 @@
 import React from 'react'
 
 import '../styles/base.scss'
-import styles from './Layout.module.scss'
 
 import Sidebar from '../components/Sidebar'
 
-import { Layout as AntLayout, Breadcrumb } from 'antd'
+import { Layout as AntLayout } from 'antd'
 
 interface LayoutProps {
   children: React.ReactNode
