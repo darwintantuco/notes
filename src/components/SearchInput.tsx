@@ -3,6 +3,7 @@ import { AutoComplete, Input } from 'antd'
 
 const SearchInput = (): JSX.Element => (
   <AutoComplete
+    id='searchInput'
     dropdownClassName='certain-category-search-dropdown'
     dropdownMatchSelectWidth={500}
     style={{

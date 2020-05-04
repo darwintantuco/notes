@@ -6,6 +6,7 @@ import '../styles/base.scss'
 
 import SearchInput from '../components/SearchInput'
 import Sidebar from '../components/Sidebar'
+import SEO from '../components/SEO'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -16,6 +17,7 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
 
   return (
     <AntLayout>
+      <SEO />
       <Header
         style={{
           background: '#fff',
