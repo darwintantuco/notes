@@ -7,8 +7,6 @@ const IndexPage = (): JSX.Element => {
 
   return (
     <>
-      <PageHeader title='Notes' />
-
       <Content
         style={{ margin: '16px 24px' }}
         className='site-layout-background'

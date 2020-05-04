@@ -1,22 +1,37 @@
 import React from 'react'
+import { Layout as AntLayout } from 'antd'
+import { Link } from 'gatsby'
 
 import '../styles/base.scss'
 
+import SearchInput from '../components/SearchInput'
 import Sidebar from '../components/Sidebar'
-
-import { Layout as AntLayout } from 'antd'
 
 interface LayoutProps {
   children: React.ReactNode
 }
 
 const Layout = ({ children }: LayoutProps): JSX.Element => {
-  return (
-    <AntLayout hasSider={true} style={{ background: '#fff' }}>
-      <Sidebar />
+  const { Header, Content } = AntLayout
 
-      <AntLayout style={{ margin: '0 24px', background: '#fff' }}>
-        {children}
+  return (
+    <AntLayout>
+      <Header
+        style={{
+          background: '#fff',
+          padding: '0 24px',
+          fontWeight: 'bold',
+          fontSize: '24px',
+        }}
+      >
+        <Link to='/'> Notes </Link>
+        <SearchInput />
+      </Header>
+      <AntLayout hasSider={true}>
+        <Sidebar />
+        <Content style={{ padding: '0 24px', background: '#fff' }}>
+          {children}
+        </Content>
       </AntLayout>
     </AntLayout>
   )
