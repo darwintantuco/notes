@@ -1,0 +1,26 @@
+@import '../styles/vendor.scss';
+@import '../styles/variables.scss';
+
+.header {
+  background: #fff;
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: $viewport-12) {
+    padding-left: 24px;
+    flex-direction: row;
+  }
+}
+
+.logo {
+  @include font-size(3);
+
+  font-weight: bold;
+  margin-bottom: 16px;
+
+  @media (min-width: $viewport-12) {
+    width: 272px;
+  }
+}

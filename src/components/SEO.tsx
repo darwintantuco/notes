@@ -1,6 +1,5 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { withPrefix } from 'gatsby'
 
 const SEO = (): JSX.Element => (
   <Helmet defer={false} defaultTitle={'My personal notes'}>
@@ -23,16 +22,6 @@ const SEO = (): JSX.Element => (
 
     <meta name='twitter:card' content='summary' />
     <meta name='twitter:site' content={''} />
-
-    <link
-      rel='stylesheet'
-      href='https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css'
-    />
-
-    <script
-      type='text/javascript'
-      src='https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js'
-    ></script>
   </Helmet>
 )
 

@@ -1,17 +1,32 @@
-import React from 'react'
-import { AutoComplete, Input } from 'antd'
+import React, { useEffect } from 'react'
+import loadjs from 'loadjs'
+import { Input } from 'antd'
 
-const SearchInput = (): JSX.Element => (
-  <AutoComplete
-    id='searchInput'
-    dropdownClassName='certain-category-search-dropdown'
-    dropdownMatchSelectWidth={500}
-    style={{
-      width: 250,
-    }}
-  >
-    <Input.Search size='large' placeholder='input here' />
-  </AutoComplete>
-)
+import styles from './SearchInput.module.scss'
+
+const SearchInput = (): JSX.Element => {
+  useEffect(() => {
+    loadjs(
+      [
+        'https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css',
+        'https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js',
+      ],
+      () => {
+        docsearch({
+          apiKey: '6bba7de852f1c94bbca06d233879424d',
+          indexName: 'darwintantuco',
+          inputSelector: '#searchInput',
+          debug: true,
+        })
+      }
+    )
+  }, [])
+
+  return (
+    <div className={styles.container}>
+      <Input placeholder='Search' id='searchInput' />
+    </div>
+  )
+}
 
 export default SearchInput
