@@ -1,22 +1,28 @@
 import React from 'react'
+import { Layout as AntLayout } from 'antd'
 
 import '../styles/base.scss'
 
 import Sidebar from '../components/Sidebar'
-
-import { Layout as AntLayout } from 'antd'
+import SEO from '../components/SEO'
+import CustomHeader from './CustomHeader'
 
 interface LayoutProps {
   children: React.ReactNode
 }
 
 const Layout = ({ children }: LayoutProps): JSX.Element => {
-  return (
-    <AntLayout hasSider={true} style={{ background: '#fff' }}>
-      <Sidebar />
+  const { Content } = AntLayout
 
-      <AntLayout style={{ margin: '0 24px', background: '#fff' }}>
-        {children}
+  return (
+    <AntLayout>
+      <SEO />
+      <CustomHeader />
+      <AntLayout hasSider={true}>
+        <Sidebar />
+        <Content style={{ padding: '0 24px', background: '#fff' }}>
+          {children}
+        </Content>
       </AntLayout>
     </AntLayout>
   )

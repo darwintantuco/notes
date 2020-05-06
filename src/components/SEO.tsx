@@ -2,10 +2,13 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 const SEO = (): JSX.Element => (
-  <Helmet defer={false} defaultTitle={'Notes'}>
+  <Helmet defer={false} defaultTitle={'My personal notes'}>
     <html lang='en' />
     <link rel='canonical' href={''} />
-    <meta name='description' content='Collection of developer notes' />
+    <meta
+      name='description'
+      content='Collection of notes I find useful in day to day work.'
+    />
     <meta
       name='viewport'
       content='width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover'
