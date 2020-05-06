@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{QeBL:function(e,n,t){"use strict";t.r(n);t("M7k7");var a=t("Ol7k"),l=t("q1tI"),o=t.n(l);n.default=function(){var e=a.a.Content;return o.a.createElement(o.a.Fragment,null,o.a.createElement(e,{style:{margin:"16px 24px"}},o.a.createElement("p",null," Collection of notes I find useful in day to day work. ")))}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-acdee1be40583e82db6d.js.map
