@@ -6,6 +6,9 @@
 
 module.exports = {
   pathPrefix: `/notes`,
+  siteMetadata: {
+    siteUrl: `https://darwintantuco.com/notes`,
+  },
   plugins: [
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
@@ -100,5 +103,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-antd',
+    'gatsby-plugin-sitemap',
   ],
 }
