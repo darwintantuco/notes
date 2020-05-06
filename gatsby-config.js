@@ -7,7 +7,7 @@
 module.exports = {
   pathPrefix: `/notes`,
   siteMetadata: {
-    siteUrl: `https://darwintantuco.com/notes`,
+    siteUrl: `https://darwintantuco.com`,
   },
   plugins: [
     'gatsby-plugin-sass',
