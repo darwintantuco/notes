@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import { Breadcrumb, Layout, PageHeader } from 'antd'
+import { Breadcrumb, Layout } from 'antd'
 
 import styles from './noteTemplate.module.scss'
 

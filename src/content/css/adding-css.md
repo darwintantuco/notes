@@ -13,7 +13,7 @@ date: '2020-04-27'
 </p>
 ```
 
-#### Style tag in _head_ section
+#### Style tag in head section
 
 ```html
 <head>
