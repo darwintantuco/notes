@@ -5,7 +5,7 @@ path: '/javascript/destructuring'
 date: '2020-04-25'
 ---
 
-### Array
+#### Array
 
 ```javascript
 const numbers = [1, 2, 3]
@@ -14,7 +14,7 @@ const [one, two, three] = numbers
 const [a, b, ...rest] = [1, 2, 3, 4, 5]
 ```
 
-### Object
+#### Object
 
 ```javascript
 const person = {
@@ -25,7 +25,7 @@ const person = {
 const { name, age } = person
 ```
 
-#### Setting a default value
+##### Setting a default value
 
 ```javascript
 const person = {
@@ -35,7 +35,7 @@ const person = {
 const { name = 'Tony', age = 25 } = person
 ```
 
-#### Renaming a variable
+##### Renaming a variable
 
 ```javascript
 const report = {

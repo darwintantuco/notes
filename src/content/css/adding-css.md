@@ -5,7 +5,7 @@ path: '/css/adding-css'
 date: '2020-04-27'
 ---
 
-### Inline style
+#### Inline style
 
 ```html
 <p style="color: red; font-weight: bold">
@@ -13,7 +13,7 @@ date: '2020-04-27'
 </p>
 ```
 
-### Style tag in _head_ section
+#### Style tag in _head_ section
 
 ```html
 <head>
@@ -26,7 +26,7 @@ date: '2020-04-27'
 </head>
 ```
 
-### External style sheet
+#### External style sheet
 
 ```css
 /* main.css */

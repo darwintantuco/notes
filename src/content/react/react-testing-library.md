@@ -5,7 +5,7 @@ path: '/react/react-testing-library'
 date: '2020-04-25'
 ---
 
-### Usage
+#### Usage
 
 ```
 yarn add @testing-library/react --dev
@@ -13,7 +13,7 @@ yarn add @testing-library/react --dev
 
 You also need to configure a test runner, preferably [jest](https://jestjs.io/).
 
-### Basic test
+#### Basic test
 
 ```javascript
 import { cleanup, render } from '@testing-library/react'
@@ -32,7 +32,7 @@ describe('<SubmitButton />', () => {
 })
 ```
 
-### Matching a string
+#### Matching a string
 
 ```javascript
 describe('<Author />', () => {
@@ -44,7 +44,7 @@ describe('<Author />', () => {
 })
 ```
 
-### Testing non existing element
+#### Testing non existing element
 
 Use queryBy\*.
 
@@ -60,7 +60,7 @@ describe('<SubmitButton />', () => {
 })
 ```
 
-### Testing useEffect and mocking an api response
+#### Testing useEffect and mocking an api response
 
 ```javascript
 jest.mock('../../../api/notification', () => ({
