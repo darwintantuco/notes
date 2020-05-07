@@ -1,17 +1,18 @@
 ---
 category: 'Javascript'
-title: 'Async/await'
-path: '/javascript/async-await'
+title: 'Promises'
+path: '/javascript/promises'
 date: '2020-04-27'
 ---
 
 ```javascript
-async function fetchMessages() {
-  try {
-    const res = await getMessages(messageId)
-    /* success */
-  } catch (err) {
-    /* handle errors */
-  }
+const fetchMessages = () => {
+  getMessages(messageId)
+    .then((res) => {
+      /* success */
+    })
+    .catch((err) => {
+      /* handle errors */
+    })
 }
 ```

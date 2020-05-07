@@ -1,7 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import { Layout, PageHeader } from 'antd'
+import { Breadcrumb, Layout, PageHeader } from 'antd'
+
+import styles from './noteTemplate.module.scss'
 
 export default function Template({ data }): JSX.Element {
   const { markdownRemark } = data
@@ -10,11 +12,14 @@ export default function Template({ data }): JSX.Element {
   const { Content } = Layout
   return (
     <>
-      <PageHeader title={frontmatter.title} />
       <Content
         style={{ margin: '16px 24px' }}
         className='site-layout-background'
       >
+        <Breadcrumb className={styles.breadcrumb}>
+          <Breadcrumb.Item>{frontmatter.category}</Breadcrumb.Item>
+          <Breadcrumb.Item>{frontmatter.title}</Breadcrumb.Item>
+        </Breadcrumb>
         <div
           style={{ width: 'fit-content' }}
           dangerouslySetInnerHTML={{ __html: html }}
