@@ -5,25 +5,25 @@ path: '/typescript/basic-types'
 date: '2020-04-27'
 ---
 
-### Boolean
+#### Boolean
 
 ```typescript
 const isWaiting: boolean = false
 ```
 
-### Numbers
+#### Numbers
 
 ```typescript
 const age: number = 4
 ```
 
-### String
+#### String
 
 ```typescript
 const greeting: string = 'Bonjour'
 ```
 
-### Array
+#### Array
 
 ```typescript
 const numbers: Array<number> = [1, 2, 3, 4, 5]
