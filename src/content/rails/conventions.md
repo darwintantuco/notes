@@ -1,6 +1,6 @@
 ---
 category: 'Rails'
-title: 'Coventions'
+title: 'Conventions'
 path: '/rails/conventions'
 date: '2020-05-07'
 ---
