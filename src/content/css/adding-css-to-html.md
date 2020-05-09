@@ -1,7 +1,7 @@
 ---
 category: 'CSS'
-title: 'Adding CSS'
-path: '/css/adding-css'
+title: 'Adding CSS to HTML'
+path: '/css/adding-css-to-html'
 date: '2020-04-27'
 ---
 

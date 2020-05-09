@@ -16,11 +16,20 @@ $ rails generate migration CreateProducts name:string part_number:string
 class CreateAdminTodos < ActiveRecord::Migration[6.0]
   def change
     create_table :admin_todos do |t|
-      t.string :description
+      t.string :name
+      t.text :desciption
+
       t.datetime :completed_at
-      t.references :user, index: true, foreign_key: true
       t.string :period, unique: true
+
       t.jsonb :info
+
+      t.references :user, index: true, foreign_key: true
+
+      # money-rails
+      t.monetize :amount, default: 0
+
+      t.timestamps
     end
   end
 end
