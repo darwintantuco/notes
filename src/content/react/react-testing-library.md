@@ -5,6 +5,15 @@ path: '/react/react-testing-library'
 date: '2020-04-25'
 ---
 
+- the more your test resemble the way your software is used, the more confidence they can give you
+- replaces enzyme
+
+#### What to test?
+
+- render
+- right things are showing up
+- output on the DOM
+
 #### Usage
 
 ```
@@ -56,6 +65,22 @@ describe('<SubmitButton />', () => {
     const { queryByTestId } = render(<SubmitButton isAdmin={false} />)
 
     expect(queryByTestId('submit-button')).toBeNull()
+  })
+})
+```
+
+#### Simulate button click
+
+```javascript
+import { fireEvent, render } from '@testing-library/react'
+
+describe('<Button />', () => {
+  it("calls onClick prop button click", () => {
+    const onClick = jest.fn()
+    const { getByText } = render(<Button onClick={onClick})
+    fireEvent.click(getByText(/submit/i))
+
+    expect(onClick).toHaveBeenCalled(1)
   })
 })
 ```

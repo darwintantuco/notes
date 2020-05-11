@@ -13,16 +13,17 @@ $ rails generate migration CreateProducts name:string part_number:string
 ```
 
 ```ruby
-class CreateAdminTodos < ActiveRecord::Migration[6.0]
+class CreateAwesome < ActiveRecord::Migration[6.0]
   def change
-    create_table :admin_todos do |t|
+    create_table :awesome do |t|
       t.string :name
-      t.text :desciption
-
+      t.text :description
+      t.integer :count, default: 1
+      t.boolean :active, default: false
       t.datetime :completed_at
-      t.string :period, unique: true
-
       t.jsonb :info
+
+      t.string :period, unique: true
 
       t.references :user, index: true, foreign_key: true
 
