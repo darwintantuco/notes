@@ -16,12 +16,12 @@ export default function Template({ data }): JSX.Element {
         style={{ margin: '16px 24px' }}
         className='site-layout-background'
       >
-        <h3 style={{ fontWeight: 'normal' }}>
+        <h2 style={{ fontWeight: 'normal' }}>
           <Breadcrumb className={styles.breadcrumb}>
             <Breadcrumb.Item>{frontmatter.category}</Breadcrumb.Item>
             <Breadcrumb.Item>{frontmatter.title}</Breadcrumb.Item>
           </Breadcrumb>
-        </h3>
+        </h2>
         <div
           style={{ width: 'fit-content' }}
           dangerouslySetInnerHTML={{ __html: html }}
