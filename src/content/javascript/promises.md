@@ -5,6 +5,8 @@ path: '/javascript/promises'
 date: '2020-04-27'
 ---
 
+#### Consuming a promise
+
 ```javascript
 const fetchMessages = () => {
   getMessages(messageId)
