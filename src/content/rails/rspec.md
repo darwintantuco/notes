@@ -23,3 +23,47 @@ RSpec.describe User, type: :model do
   end
 end
 ```
+
+#### Service object spec
+
+```ruby
+require "rails_helper"
+
+RSpec.describe LoanJournal::GetNumberOfPaymentsPerYear do
+  subject { described_class.new(period).call }
+
+  describe "#call" do
+    context "when period is monthly" do
+      let(:period) { "monthly" }
+
+      it "returns 12" do
+        expect(subject).to eq 12
+      end
+    end
+
+    context "when period is weekly" do
+      let(:period) { "weekly" }
+
+      it "returns 52" do
+        expect(subject).to eq 52
+      end
+    end
+
+    context "when period is fortnightly" do
+      let(:period) { "fortnightly" }
+
+      it "returns 26" do
+        expect(subject).to eq 26
+      end
+    end
+
+    context "when period is invalid" do
+      let(:period) { "invalid_period" }
+
+      it "raises an error" do
+        expect { subject } .to raise_error(ArgumentError, /Please provide a valid period/)
+      end
+    end
+  end
+end
+```
