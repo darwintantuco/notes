@@ -43,7 +43,7 @@ class SomeUpdates < ActiveRecord::Migration[6.0]
   def change
     add_column :sellers, :approved_notification_seen, :boolean, default: false
     rename_column :milestones, :start_yr, :years_from_now
-    remove_column :technologies, :project_id
+    remove_column :loans, :interest_rate, :decimal
   end
 end
 ```
