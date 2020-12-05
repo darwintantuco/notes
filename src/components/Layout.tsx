@@ -1,8 +1,6 @@
 import React from 'react'
 import { Layout as AntLayout } from 'antd'
 
-import '../styles/base.scss'
-
 import Sidebar from '../components/Sidebar'
 import SEO from '../components/SEO'
 import CustomHeader from './CustomHeader'

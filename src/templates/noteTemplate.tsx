@@ -3,8 +3,6 @@ import { graphql } from 'gatsby'
 
 import { Breadcrumb, Layout } from 'antd'
 
-import styles from './noteTemplate.module.scss'
-
 export default function Template({ data }): JSX.Element {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
@@ -17,7 +15,7 @@ export default function Template({ data }): JSX.Element {
         className='site-layout-background'
       >
         <h2 style={{ fontWeight: 'normal' }}>
-          <Breadcrumb className={styles.breadcrumb}>
+          <Breadcrumb className={''}>
             <Breadcrumb.Item>{frontmatter.category}</Breadcrumb.Item>
             <Breadcrumb.Item>{frontmatter.title}</Breadcrumb.Item>
           </Breadcrumb>
