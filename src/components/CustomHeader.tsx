@@ -5,8 +5,10 @@ import SearchInput from '../components/SearchInput'
 
 const CustomHeader = (): JSX.Element => {
   return (
-    <div className={'flex mt-26'}>
-      <Link to='/' className={''}>
+    <div
+      className={'bg-white pt-6 flex flex-col items-center md:flex-row md:pl-6'}
+    >
+      <Link to='/' className={'mb-3 font-bold text-2xl md:w-72'}>
         Notes
       </Link>
 

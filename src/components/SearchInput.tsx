@@ -21,7 +21,7 @@ const SearchInput = (): JSX.Element => {
   }, [])
 
   return (
-    <div className={''}>
+    <div className={'mb-8'}>
       <Input placeholder='Search' id='searchInput' />
     </div>
   )

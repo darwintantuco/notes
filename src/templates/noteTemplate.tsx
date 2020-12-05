@@ -15,7 +15,7 @@ export default function Template({ data }): JSX.Element {
         className='site-layout-background'
       >
         <h2 style={{ fontWeight: 'normal' }}>
-          <Breadcrumb className={''}>
+          <Breadcrumb style={{ marginBottom: '24px', fontSize: '1.5rem' }}>
             <Breadcrumb.Item>{frontmatter.category}</Breadcrumb.Item>
             <Breadcrumb.Item>{frontmatter.title}</Breadcrumb.Item>
           </Breadcrumb>
