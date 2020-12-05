@@ -1,14 +1,13 @@
 import React from 'react'
 
-import Layout from '../components/Layout'
-import styles from './404.module.scss'
-
 const NotFoundPage = (): JSX.Element => {
   return (
-    <Layout>
-      <h1 className={styles.code}>404 </h1>
-      <p className={styles.text}>Page not found </p>
-    </Layout>
+    <div className='flex h-screen text-gray-500'>
+      <div className='m-auto'>
+        <p className='font-bold text-center text-7xl'>404 </p>
+        <p className='text-lg'>Page not found. </p>
+      </div>
+    </div>
   )
 }
 

@@ -10,7 +10,6 @@ module.exports = {
     siteUrl: `https://darwintantuco.com`,
   },
   plugins: [
-    'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-postcss',
     'gatsby-plugin-typescript',

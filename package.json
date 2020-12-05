@@ -32,10 +32,9 @@
     "gatsby-plugin-antd": "^2.2.0",
     "gatsby-plugin-layout": "^1.3.0",
     "gatsby-plugin-offline": "^3.1.5",
-    "gatsby-plugin-postcss": "^2.1.6",
+    "gatsby-plugin-postcss": "^3.3.0",
     "gatsby-plugin-react-helmet": "^3.1.6",
     "gatsby-plugin-robots-txt": "^1.5.1",
-    "gatsby-plugin-sass": "^2.1.13",
     "gatsby-plugin-sitemap": "^2.4.2",
     "gatsby-plugin-typescript": "^2.3.1",
     "gatsby-remark-autolink-headers": "^2.2.4",
@@ -43,8 +42,7 @@
     "gatsby-source-filesystem": "^2.2.5",
     "gatsby-transformer-remark": "^2.7.5",
     "loadjs": "^4.2.0",
-    "modularscale-sass": "^3.0.8",
-    "node-sass": "^4.12.0",
+    "postcss": "^8.1.14",
     "prismjs": "^1.20.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -57,7 +55,8 @@
     "@types/loadjs": "^4.0.0",
     "@types/react-helmet": "^5.0.15",
     "husky": "^4.2.5",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^2.0.1"
   },
   "repository": {
     "type": "git",

@@ -2,8 +2,6 @@ import React, { useEffect } from 'react'
 import loadjs from 'loadjs'
 import { Input } from 'antd'
 
-import styles from './SearchInput.module.scss'
-
 const SearchInput = (): JSX.Element => {
   useEffect(() => {
     loadjs(
@@ -23,7 +21,7 @@ const SearchInput = (): JSX.Element => {
   }, [])
 
   return (
-    <div className={styles.container}>
+    <div className={'mb-8'}>
       <Input placeholder='Search' id='searchInput' />
     </div>
   )
