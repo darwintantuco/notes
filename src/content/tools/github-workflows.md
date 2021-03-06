@@ -19,7 +19,9 @@ jobs:
     services:
       db:
         image: postgres:11.6-alpine
-        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+        options: >
+          --health-cmd pg_isready --health-interval 10s
+          --health-timeout 5s --health-retries 5
         ports: ['5432:5432']
         env:
           POSTGRES_USER: postgres

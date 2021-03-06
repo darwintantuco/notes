@@ -5,13 +5,10 @@ path: '/graphql/mutations'
 date: '2020-12-06'
 ---
 
-```
+```graphql
 mutation {
-  createBooking(placeId: 1,
-  startDate: "2020-12-06",
-  endDate: "2020-12-07") {
-    startDate
-    endDate
+  createBooking(placeId: 1, date: "2020-12-06") {
+    date
     totalPrice
   }
 }

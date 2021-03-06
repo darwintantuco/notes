@@ -14,5 +14,6 @@ $ bundle exec rails db:rollback STEP=1
 #### Reset test database
 
 ```shell
-$ bundle exec rails db:drop db:create db:migrate RAILS_ENV=test
+$ bundle exec rails \
+  db:drop db:create db:migrate RAILS_ENV=test
 ```

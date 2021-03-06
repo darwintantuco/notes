@@ -61,8 +61,10 @@ getBy\* throws an error if nothing is found.
 
 ```javascript
 describe('<SubmitButton />', () => {
-  it('should not render the component when isAdmin is false', () => {
-    const { queryByTestId } = render(<SubmitButton isAdmin={false} />)
+  it('should not render the component when isAdmin is false',
+    () => {
+    const { queryByTestId } =
+      render(<SubmitButton isAdmin={false} />)
 
     expect(queryByTestId('submit-button')).toBeNull()
   })
@@ -90,7 +92,8 @@ describe('<Button />', () => {
 ```javascript
 jest.mock('../../../api/notification', () => ({
   fetchNotifications: jest.fn(() => {
-    return Promise.resolve({ unreadCount: 1, notifications: [] })
+    return Promise.resolve({ unreadCount: 1,
+      notifications: [] })
   }),
 }))
 

@@ -9,7 +9,8 @@ date: '2020-04-25'
 
 ```shell
 $ rails generate migration CreateAdminTodos
-$ rails generate migration CreateProducts name:string part_number:string
+$ rails generate migration CreateProducts \
+  name:string part_number:string
 ```
 
 ```ruby
@@ -41,7 +42,8 @@ end
 ```ruby
 class SomeUpdates < ActiveRecord::Migration[6.0]
   def change
-    add_column :sellers, :approved_notification_seen, :boolean, default: false
+    add_column :sellers, :approved_notification_seen,
+      :boolean, default: false
     rename_column :milestones, :start_yr, :years_from_now
     remove_column :loans, :interest_rate, :decimal
   end

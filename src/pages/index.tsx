@@ -7,7 +7,7 @@ const IndexPage = (): JSX.Element => {
 
   return (
     <>
-      <Content style={{ margin: '16px 24px' }}>
+      <Content className='mt-4 mb-4 ml-6 mr-6'>
         <p> Collection of notes I find useful in day to day work. </p>
         <p>Contains notes from books, blogs, articles, online courses, etc.</p>
         <p>

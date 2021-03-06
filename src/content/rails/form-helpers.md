@@ -22,7 +22,8 @@ date: '2020-05-19'
 ```
 
 ```haml
-= form_with(model: [:admin, @todo], url: admin_user_todos_path,
+= form_with(model: [:admin, @todo],
+  url: admin_user_todos_path,
   local: true, class: "form form-pane") do |f|
   .form-group
     = f.label :description, class: 'label'
