@@ -8,7 +8,8 @@ date: '2020-05-07'
 #### Command
 
 ```shell
-$ rails new appname --database=postgresql --skip-test --skip-turbolinks --skip-coffee --typescript
+$ rails new appname --database=postgresql \
+  --skip-test --skip-turbolinks --skip-coffee --typescript
 ```
 
 - Rename config/database.yml to config/database.yml.sample, and add it to .gitignore

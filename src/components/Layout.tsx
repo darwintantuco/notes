@@ -13,14 +13,12 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
   const { Content } = AntLayout
 
   return (
-    <AntLayout>
+    <AntLayout className='m-auto xl: max-w-screen-xl lg:max-w-screen-lg'>
       <SEO />
       <CustomHeader />
       <AntLayout hasSider={true}>
         <Sidebar />
-        <Content style={{ padding: '0 24px', background: '#fff' }}>
-          {children}
-        </Content>
+        <Content className='pl-6 pr-6 bg-white'>{children}</Content>
       </AntLayout>
     </AntLayout>
   )

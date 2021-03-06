@@ -10,18 +10,15 @@ export default function Template({ data }): JSX.Element {
   const { Content } = Layout
   return (
     <>
-      <Content
-        style={{ margin: '16px 24px' }}
-        className='site-layout-background'
-      >
-        <h2 style={{ fontWeight: 'normal' }}>
-          <Breadcrumb style={{ marginBottom: '24px', fontSize: '1.5rem' }}>
+      <Content className='mt-4 mb-4 ml-6 mr-6 site-layout-background'>
+        <h2 className='font-normal'>
+          <Breadcrumb style={{ fontSize: '1.5rem', marginBottom: '24px' }}>
             <Breadcrumb.Item>{frontmatter.category}</Breadcrumb.Item>
             <Breadcrumb.Item>{frontmatter.title}</Breadcrumb.Item>
           </Breadcrumb>
         </h2>
         <div
-          style={{ width: 'fit-content' }}
+          className='markdown-body'
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </Content>

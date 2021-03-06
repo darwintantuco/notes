@@ -7,16 +7,16 @@ date: '2020-12-05'
 
 #### Simple Query
 
-```
+```graphql
 query {
   user(id: "100") {
-    name,
+    name
     email
   }
 }
 ```
 
-```
+```json
 {
   "user": {
     "id": "100",
@@ -28,11 +28,11 @@ query {
 
 #### Multiple Resources
 
-```
+```graphql
 query {
   user(id: "100") {
-    name,
-    email,
+    name
+    email
     posts {
       title
     }
@@ -40,16 +40,13 @@ query {
 }
 ```
 
-```
+```json
 {
   "user": {
     "id": "100",
     "name": "John Doe",
     "email": "john@gmail.com",
-    "posts": [
-      {"title": "post 1"},
-      {"title": "post 2"}
-    ]
+    "posts": [{ "title": "post 1" }, { "title": "post 2" }]
   }
 }
 ```

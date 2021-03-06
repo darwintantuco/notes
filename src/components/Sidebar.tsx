@@ -50,7 +50,7 @@ const Sidebar = (): JSX.Element => {
 
   return (
     <Sider width='300' breakpoint='md' collapsedWidth='0' theme='light'>
-      <Menu mode='inline' style={{ height: '100vh', paddingTop: '16px' }}>
+      <Menu mode='inline' className='h-screen pt-4'>
         {Object.keys(categories).map((category, i) => {
           return (
             <SubMenu key={i} title={category}>

@@ -9,8 +9,10 @@ date: '2020-05-08'
 
 1. Add column for id and type
 
-   ```ruby
-   rails g model comment content:text commentable_id:integer commentable_type:string
+   ```shell
+   $ rails g model comment \
+      content:text commentable_id:integer \
+      commentable_type:string
    ```
 
    or
