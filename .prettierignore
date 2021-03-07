@@ -1,6 +1,3 @@
 # gatsby files
 .cache
 public
-
-# Ignore all markdown files
-*.md

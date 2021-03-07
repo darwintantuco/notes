@@ -67,7 +67,8 @@ RSpec.describe LoanJournal::GetNumberOfPaymentsPerYear do
       let(:period) { "invalid_period" }
 
       it "raises an error" do
-        expect { subject } .to raise_error(ArgumentError, /Please provide a valid period/)
+        expect { subject } .to raise_error(ArgumentError,
+          /Please provide a valid period/)
       end
     end
   end

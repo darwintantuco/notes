@@ -18,6 +18,7 @@ export default function Template({ data }): JSX.Element {
           </Breadcrumb>
         </h2>
         <div
+          style={{ width: 'fit-content' }}
           className='markdown-body'
           dangerouslySetInnerHTML={{ __html: html }}
         />
