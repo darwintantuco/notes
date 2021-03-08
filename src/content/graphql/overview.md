@@ -25,3 +25,8 @@ date: '2020-12-05'
 - syntax highlighting
 - error reporting
 - automation & hinting
+
+#### Graphql Connections
+
+- pagination
+- not specific to relay
