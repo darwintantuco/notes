@@ -13,6 +13,7 @@
   "scripts": {
     "build": "gatsby build",
     "build:githubpages": "gatsby build --prefix-paths",
+    "dev": "gatsby develop",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
