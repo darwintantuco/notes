@@ -5,6 +5,26 @@ path: '/linux/commands'
 date: '2020-05-11'
 ---
 
+#### ls
+
+short for list
+
+#### cd
+
+short for change directory
+
+#### pwd
+
+short for print working directory
+
+#### cp
+
+short for copy
+
+#### rm
+
+#### mv
+
 #### cat
 
 #### head

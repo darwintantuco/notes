@@ -5,8 +5,13 @@ path: '/elixir/tasks'
 date: '2021-03-07'
 ---
 
-State
+#### Tasks
 
-- process that loops indefinitely
+build on top of the spawn functions to provide better error reports
+
+and introspection
+
+#### State
+
 - maintain state
-- send and receive messages
+- a process that loops indefinitely

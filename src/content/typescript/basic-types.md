@@ -29,3 +29,12 @@ const greeting: string = 'Bonjour'
 const numbers: Array<number> = [1, 2, 3, 4, 5]
 const numbers: number[] = [1, 2, 3, 4, 5]
 ```
+
+#### Function
+
+```typescript
+// returning nothing
+function greeter(name: string): void {
+  console.log(`Hello, ${name}`)
+}
+```

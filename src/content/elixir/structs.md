@@ -9,7 +9,7 @@ date: '2021-03-07'
 
 built on top of maps that provide compile checks and default values
 
-take the name of the module they are define in
+take the name of the module they are defined
 
 ```elixir
 defmodule User do
@@ -27,4 +27,32 @@ is_map(john)
 
 # holds the name of the struct
 john.__struct__
+```
+
+#### Accessing
+
+```elixir
+user = %User{name: "Tony Stark", age: 30}
+
+user.name
+user.age
+```
+
+#### Updating
+
+similar to maps
+
+```elixir
+user = %User{name: "Tony Stark", age: 30}
+
+user = %{ user | age: 31}
+```
+
+#### Pattern match
+
+```elixir
+user = %User{name: "Tony Stark", age: 30}
+
+%{} = user
+%{name: name} = user
 ```

@@ -7,8 +7,8 @@ date: '2021-03-07'
 
 #### Maps
 
+- unordered collection of key / value pairs
 - allow any value as key
-- no order
 
 ```elixir
 %{} = %{:a => 1, 2 => :b}
@@ -18,10 +18,18 @@ map = %{n => :one}
 map[n]
 
 %{^n => :one} = %{1 => :one, 2 => :two}
+```
 
+#### Accessing
+
+[] - returns nil when key is not found
+. - raises an error when key is not found
+
+```elixir
 # alternate syntax when keys are atoms
-map = %{a: 1, b: 2}
-map.a
+conv = %{method: "GET"}
+conv[:method]
+conv.method
 ```
 
 prefer pattern matching or map.field syntax over Map module functions

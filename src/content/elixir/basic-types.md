@@ -1,11 +1,23 @@
 ---
 category: 'Elixir'
-title: 'Atoms'
-path: '/elixir/atoms'
-date: '2021-03-07'
+title: 'Basic Types'
+path: '/elixir/basic-types'
+date: '2021-03-14'
 ---
 
+#### Basic Types
+
+#### Booleans
+
+true / false
+
+nil & false are falsy
+
+all other values are truthy
+
 #### Atoms
+
+constants
 
 ##### Aliases
 

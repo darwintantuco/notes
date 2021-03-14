@@ -13,6 +13,18 @@ date: '2020-12-05'
   - mutations
   - subscription
 
+```
++---------------+                   +----------------+
+|               | ----------------> |     Server     |
+|               | request           |                |
+|               | (GraphQL document)|                |
+|    Client     |                   | +------------+ |
+|               |                   | | GraphQL    | |
+|               | <---------------  | | Schema     | |
+|               |         response  | +------------+ |
++---------------+   (JSON document) +----------------+
+```
+
 #### Schema
 
 - describe the shape of your data as graph

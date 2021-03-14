@@ -18,6 +18,7 @@ to disable it, define `@disable_ddl_transaction true` in migration file
 ```bash
 $ mix ecto.gen.migration add_users_and_posts
 $ mix ecto.gen.migration add_users_and_posts -r EctoExample.Repo
+$ mix ecto.gen.migration add_users_and_posts --migrations-path=priv/repo/manual_migrations
 ```
 
 ```bash
@@ -67,6 +68,22 @@ end
 Ecto can't automatically revert removal of column since it doesn't know which type it should use to create the column again
 
 ```elixir
+
+defmodule Nexus.Repo.Migrations.RemoveAgeFromUser do
+  use Ecto.Migration
+
+  def up do
+    alter table("users") do
+      remove :age
+    end
+  end
+
+  def down do
+    alter table("users") do
+      add :age, :integer
+    end
+  end
+end
 
 ```
 

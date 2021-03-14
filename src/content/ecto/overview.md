@@ -5,21 +5,24 @@ path: '/ecto/overview'
 date: '2021-03-12'
 ---
 
-#### Ecto
+#### Repo
 
-Repo
+interface to database
 
-- interface to database
-- you create your own `Repo` module per application
+you create your own `Repo` module per application
 
-Query
+#### Query
 
-- api for writing queries
+api for writing queries
 
-Schema
+#### Schema
 
-Changeset
+#### Changeset
 
-Multi
+provides functions for creating and manipulating changesets
+\- a data structure that captures all aspects of making a change
+to your data
 
-Migration
+#### Multi
+
+#### Migration

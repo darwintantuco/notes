@@ -5,7 +5,6 @@ path: '/react/react-testing-library'
 date: '2020-04-25'
 ---
 
-- the more your test resemble the way your software is used, the more confidence they can give you
 - replaces enzyme
 
 #### What to test?
@@ -13,6 +12,12 @@ date: '2020-04-25'
 - render
 - right things are showing up
 - output on the DOM
+
+#### Tips
+
+1. Avoid testing states
+1. Think how will you test it in real life
+1. Tests should not fail after simple refactoring
 
 #### Usage
 

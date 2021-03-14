@@ -10,6 +10,7 @@ date: '2020-05-07'
 - don't commit config/database.yml to version control, add it in .gitignore
 - add config/database.yml.sample instead
 - always be careful with secrets
+- follow one dot rule (law of demeter)
 
 #### Models
 
@@ -30,3 +31,4 @@ date: '2020-05-07'
 - avoid too much logic on views
 - prefer decorators over view helpers
 - don't use instance variables in partials
+- don't hit database
