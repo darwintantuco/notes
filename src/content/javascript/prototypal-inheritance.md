@@ -1,6 +1,6 @@
 ---
 category: 'Javascript'
-title: 'Prototypal Inheritance
+title: 'Prototypal Inheritance'
 path: '/javascript/prototypal-inheritance'
 date: '2021-03-20'
 ---

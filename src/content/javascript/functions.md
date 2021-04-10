@@ -1,6 +1,6 @@
 ---
 category: 'Javascript'
-title: 'Functions
+title: 'Functions'
 path: '/javascript/functions'
 date: '2021-03-20'
 ---

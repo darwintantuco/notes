@@ -25,7 +25,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn lint:all"
+      "pre-commit": "yarn lint:all",
+      "pre-push": "yarn build"
     }
   },
   "dependencies": {
