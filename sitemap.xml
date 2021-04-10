@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://darwintantuco.com/notes/javascript/iife</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/javascript/json</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/javascript/object</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/elixir/ex-unit</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/javascript/array</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/javascript/data-types</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/javascript/functions</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/javascript/glosary</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/javascript/prototypal-inheritance</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/javascript/scripts</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/javascript/this</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/javascript/variables</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/algorithm/overview</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/data-structures/overview</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/sql/constraints</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/sql/delete</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/sql/insert</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/sql/select</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/sql/update</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/authentication/jwt</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/authentication/overview</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/absinthe/dataloader</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/elixir/basic-types</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/elixir/capture-operator</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/elixir/dates</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/elixir/debugging</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/elixir/pattern-matching</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/elixir/pipe-operator</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/elixir/strings</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/elixir/tuples</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/elixir/typespecs</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/typescript/basic-types</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/ecto/migrations</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/ecto/multi</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/ecto/overview</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -16,7 +48,6 @@
 <url> <loc>https://darwintantuco.com/notes/vim/common-movements</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/elixir/agents</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/elixir/alias</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://darwintantuco.com/notes/elixir/atoms</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/elixir/best-practices</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/elixir/comprehensions</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/elixir/conventions</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -59,7 +90,6 @@
 <url> <loc>https://darwintantuco.com/notes/javascript/async-await</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/javascript/promises</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/react/hooks</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://darwintantuco.com/notes/typescript/basic-types</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/javascript/destructuring</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/rails/migrations</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/react/react-testing-library</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
