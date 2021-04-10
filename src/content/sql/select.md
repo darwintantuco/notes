@@ -5,9 +5,7 @@ path: '/sql/select'
 date: '2021-03-17'
 ---
 
-#### select
-
-retrieves one or more rows from one or more tables
+- retrieves one or more rows from one or more tables
 
 ```sql
 select firstname, lastname from users;
@@ -37,7 +35,7 @@ select distinct firstname, lastname from users;
 
 #### where
 
-use to filter rows
+- use to filter rows
 
 ```sql
 select * from users where firstname='Tony';
@@ -45,7 +43,7 @@ select * from users where firstname='Tony';
 
 #### and
 
-if both are true, row is included
+- if both are true, row is included
 
 ```sql
 select * from users where firstname='Tony' and age > 30;
@@ -53,7 +51,7 @@ select * from users where firstname='Tony' and age > 30;
 
 #### or
 
-if either is true, row is included
+- if either is true, row is included
 
 ```sql
 select * from users where firstname='Tony' or firstname='Steve';
@@ -61,7 +59,7 @@ select * from users where firstname='Tony' or firstname='Steve';
 
 #### between
 
-acts on a column and two values
+- acts on a column and two values
 
 ```sql
 select * from users where age between 20 and 50;
@@ -69,7 +67,7 @@ select * from users where age between 20 and 50;
 
 #### like
 
-`%` and `_` wildcards
+- `%` and `_` wildcards
 
 ```sql
 -- returns records where firstname starts with "T"
@@ -87,9 +85,8 @@ select * from users where firstname in ('Tony', 'Steve');
 
 #### is
 
-special operator
-
-only works for NULL
+- special operator
+- only works for NULL
 
 ```sql
 select * from users where age is NULL;
@@ -99,23 +96,19 @@ select * from users where age is not NULL;
 
 #### order_by
 
-sorts the result set
-
-can be applied to one or more columns
-
-`asc` (default) or `desc`
+- sorts the result set
+- can be applied to one or more columns
+- `asc` (default) or `desc`
 
 #### join
 
-merge multiple tables into one result set
+- merge multiple tables into one result set
 
 #### cross join
 
-not used in real world and consider a bad practice
-
-simplest join and least useful
-
-combines rows from both tables
+- not used in real world and consider a bad practice
+- simplest join and least useful
+- combines rows from both tables
 
 ```sql
 select users.id, users.firstname, posts.id, posts.title from users, posts;
@@ -123,9 +116,8 @@ select users.id, users.firstname, posts.id, posts.title from users, posts;
 
 #### inner join
 
-matches column in first table to second
-
-doesn't deal with NULL values
+- matches column in first table to second
+- doesn't deal with NULL values
 
 ```sql
 select users.firstname, users.lastname, posts.title from users
@@ -134,7 +126,7 @@ select users.firstname, users.lastname, posts.title from users
 
 #### set functions
 
-compute new values from column values
+- compute new values from column values
 
 #### count
 
@@ -164,7 +156,7 @@ select firstname, count(firstname) from users group by firstname;
 
 #### having
 
-like a where clause against group by
+- like a where clause against group by
 
 ```sql
 select firstname, count(firstname) from users group by firstname

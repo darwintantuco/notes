@@ -5,15 +5,12 @@ path: '/ecto/migrations'
 date: '2021-03-12'
 ---
 
-#### Migrations
+- create and alter tables in your database
+- ecto keeps track of which migrations have already been run using `schema_migrations` table
+- by default migrations are run within a database transaction,
+  - to disable it, define `@disable_ddl_transaction true` in migration file
 
-create and alter tables in your database
-
-ecto keeps track of which migrations have already been run using `schema_migrations` table
-
-by default migrations are run within a database transaction,
-
-to disable it, define `@disable_ddl_transaction true` in migration file
+#### Adding a migration
 
 ```bash
 $ mix ecto.gen.migration add_users_and_posts
@@ -25,7 +22,7 @@ $ mix ecto.gen.migration add_users_and_posts --migrations-path=priv/repo/manual_
 $ mix ecto.migrate
 ```
 
-#### Rollback
+#### Rollback a migration
 
 ```bash
 $ mix ecto.rollback
@@ -63,21 +60,21 @@ defmodule EctoExample.Repo.Migrations.AddUsersAndPosts do
 end
 ```
 
-#### Up & Down operations
-
-Ecto can't automatically revert removal of column since it doesn't know which type it should use to create the column again
+#### Up & Down Operations
 
 ```elixir
-
 defmodule Nexus.Repo.Migrations.RemoveAgeFromUser do
   use Ecto.Migration
 
+  # ecto can't automatically revert removal of column
+  # since it doesn't know which type it should use to create the column again
   def up do
     alter table("users") do
       remove :age
     end
   end
 
+  # executed whenever you want to rollback
   def down do
     alter table("users") do
       add :age, :integer
@@ -89,6 +86,5 @@ end
 
 #### flush()
 
-tells Ecto to execute currently queued operations
-
-any code that comes after the flush call can assume that all the prior changes have been run
+- tells Ecto to execute currently queued operations
+- any code that comes after the flush call can assume that all the prior changes have been run

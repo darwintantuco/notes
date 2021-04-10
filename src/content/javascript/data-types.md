@@ -7,17 +7,16 @@ date: '2021-03-20'
 
 #### Primitive Types
 
-represent a single value that is not an object
+- represent a single value that is not an object
 
 #### undefined
 
-special value to indicate the variable is not defined
-
-avoid setting a variable to undefined, use null instead
+- special value to indicate the variable is not defined
+- avoid setting a variable to undefined, use null instead
 
 #### null
 
-lack of existence
+- lack of existence
 
 #### boolean
 
@@ -27,4 +26,4 @@ lack of existence
 
 #### symbol
 
-new in es6
+- new in es6

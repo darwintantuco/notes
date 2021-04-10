@@ -5,13 +5,7 @@ path: '/absinthe/dataloader'
 date: '2021-03-14'
 ---
 
-#### Dataloader
-
-elixir library
-
-tool that can help your application fetch data in an
-
-optimal way by implementing batching and caching
+- tool that can help your application fetch data in an optimal way by implementing batching and caching
 
 ```elixir
 source = Dataloader.Ecto.new(MyApp.Repo)

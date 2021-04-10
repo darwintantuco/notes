@@ -38,7 +38,7 @@ date: '2020-12-05'
 - error reporting
 - automation & hinting
 
-#### Graphql Connections
+#### GraphQL Connections
 
 - pagination
 - not specific to relay

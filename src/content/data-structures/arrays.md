@@ -1,7 +1,7 @@
 ---
-category: 'Data Structure'
+category: 'Data Structures'
 title: 'Arrays'
-path: '/data-structure/arrays'
+path: '/data-structures/arrays'
 date: '2020-05-08'
 ---
 
@@ -9,14 +9,12 @@ ordered list
 
 #### Big-O of common operations
 
-| Operation                          | Big O |
-| :--------------------------------- | :---- |
-| access                             | O(1)  |
-| searching                          | O(n)  |
-| insertion/removal at the end       | O(1)  |
-| insertion/removal at the beginning | O(n)  |
+| Operation | Big O |
+| :-------- | :---- |
+| access    | O(1)  |
+| searching | O(n)  |
 
-#### Big O of common methods (javascript)
+#### Big O of common methods in Javascript
 
 | Method            | Big O       |
 | :---------------- | :---------- |

@@ -5,11 +5,8 @@ path: '/elixir/modules'
 date: '2021-03-07'
 ---
 
-##### Modules
-
-collection of functions
-
-`.ex` file can hold different modules
+- collection of functions
+- `.ex` file can hold different modules
 
 ```elixir
 # math.ex

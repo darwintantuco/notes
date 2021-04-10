@@ -7,10 +7,11 @@ date: '2020-04-27'
 
 #### General
 
-- always use classes for styling, avoid using id
+- avoid using id for styling, always use classes
 - use variables for magic numbers
-  - color hex
-  - font sizes (use modular scale)
+  - hex colors
+- use modular scale for font sizes
+
 - follow 8-point grid guideline
 
 #### Packages
@@ -19,5 +20,5 @@ date: '2020-04-27'
 
 #### Media Queries
 
-1. prefer min-width over max-width, also means prefer mobile-first
-1. store preset breakpoints in \$viewport-xxx variables and name it according to their nearest-hundredth number
+- prefer `min-width` over `max-width`, also means prefer mobile-first
+- store preset breakpoints in `$viewport-xxxx` variables and name it according to their nearest-hundredth number

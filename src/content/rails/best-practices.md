@@ -7,8 +7,8 @@ date: '2020-05-07'
 
 #### General
 
-- don't commit config/database.yml to version control, add it in .gitignore
-- add config/database.yml.sample instead
+- don't commit `config/database.yml` to version control, add it in `.gitignore`
+- add `config/database.yml.sample` instead
 - always be careful with secrets
 - follow one dot rule (law of demeter)
 
@@ -18,7 +18,7 @@ date: '2020-05-07'
 
 #### Controllers
 
-- use thin controllers all the time, put the logic inside a class/service
+- use thin controllers all the time, put the logic on another class
 
 #### Tests
 

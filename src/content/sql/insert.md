@@ -5,9 +5,7 @@ path: '/sql/insert'
 date: '2021-03-17'
 ---
 
-#### insert
-
-adds one or more rows into a table
+- adds one or more rows into a table
 
 ```sql
 insert into users(firstname, lastname, inserted_at, updated_at)

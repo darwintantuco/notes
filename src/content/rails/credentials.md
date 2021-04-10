@@ -15,9 +15,9 @@ $ rails credentials:edit --environment staging
 
 #### Troubleshooting
 
-rails credentials:edit fails after fixing a merge conflict.
+`rails credentials:edit` fails after fixing a merge conflict.
 
-This happens when you edit credentials.yml.enc directly.
+This happens when you edit `credentials.yml.enc` directly.
 
 Mostly likely, the editor you're using appended a newline at the end.
 

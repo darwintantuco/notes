@@ -5,13 +5,10 @@ path: '/elixir/lists'
 date: '2021-03-07'
 ---
 
-#### Lists
+- linked lists
+- not an array
 
-not arrays
-
-linked lists
-
-```
+```elixir
 list = [1, 2, 3]
 [a | b] = [1, 2, 3]
 
@@ -22,12 +19,6 @@ list = [1, 2, 3]
 
 # matches a list of two or more elements
 [a, b | tail]
-```
-
-#### Updating
-
-```elixir
-list = [1, 2, 3]
 
 # add 0 at the start of the list
 list = [0 | list]

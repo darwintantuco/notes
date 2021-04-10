@@ -12,7 +12,7 @@ $ rails new appname --database=postgresql \
   --skip-test --skip-turbolinks --skip-coffee --typescript
 ```
 
-- Rename config/database.yml to config/database.yml.sample, and add it to .gitignore
+- Rename `config/database.yml` to `config/database.yml.sample`, and add it to `.gitignore`
 - Always keep README.md up to date
 - Decide on ruby and nodejs version, preferably use asdf
 - Setup rspec test suite

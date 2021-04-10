@@ -5,7 +5,7 @@ path: '/javascript/object'
 date: '2021-03-27'
 ---
 
-collection of name and value pairs
+- collection of name and value pairs
 
 ```javascript
 const person = {}
@@ -26,9 +26,8 @@ user.hobbies = []
 
 #### Access
 
-Prefer member access operator
-
-Only use computed member access operator for dynamic property
+- prefer member access operator
+- only use computed member access operator for dynamic property
 
 ```javascript
 // member access operator
@@ -43,7 +42,7 @@ user['address']['city']
 
 #### Pass by reference
 
-All objects including functions are pass by reference
+- all objects including functions are pass by reference
 
 ```javascript
 const a = { greeting: 'hello' }

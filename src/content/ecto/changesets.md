@@ -5,8 +5,6 @@ path: '/ecto/changesets'
 date: '2021-03-08'
 ---
 
-#### Changesets
-
 help us with the entire life cycle of making a change
 
 1. casting and filtering user input
@@ -43,12 +41,7 @@ end
 
 #### Constraints
 
-enforced by database
-
-ecto will always run all validations for a given changeset even if one fails
-
-when a validation fail, the constraints are not checked at all
-
-meaning it won't hit the database
-
-when one constraint fails, other constraints are not checked
+- enforced by database
+- ecto will always run all validations for a given changeset even if one fails
+- when a validation fail, the constraints are not checked at all, meaning it won't hit the database
+- when one constraint fails, other constraints are not checked

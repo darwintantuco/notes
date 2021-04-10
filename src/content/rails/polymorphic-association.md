@@ -5,48 +5,46 @@ path: '/rails/polymorphic-association'
 date: '2020-05-08'
 ---
 
-#### How
+Add column for id and type
 
-1. Add column for id and type
+```shell
+$ rails g model comment \
+   content:text commentable_id:integer \
+   commentable_type:string
+```
 
-   ```shell
-   $ rails g model comment \
-      content:text commentable_id:integer \
-      commentable_type:string
-   ```
+or
 
-   or
+```ruby
+# migration file
+create_table :comments do |t|
+  t.text :content
+  t.belongs_to :commentable, polymorphic: true
 
-   ```ruby
-   # migration file
-   create_table :comments do |t|
-     t.text :content
-     t.belongs_to :commentable, polymorphic: true
+  t.timestamps
+end
 
-     t.timestamps
-   end
+# tip, add index
+add_index :comments, [:commentable_id, :commentable_type]
+```
 
-   # tip, add index
-   add_index :comments, [:commentable_id, :commentable_type]
-   ```
+Update Model Association
 
-1. Update Model Association
+```ruby
+# comment
+belongs_to :commentable, polymorphic: true
 
-   ```ruby
-   # comment
-   belongs_to :commentable, polymorphic: true
+# article, event, photo
+has_many :comments, as: :commentable
+```
 
-   # article, event, photo
-   has_many :comments, as: :commentable
-   ```
+Usage
 
-1. Usage
+```ruby
+a = Article.first
+# rails automatically populate commentable_type
+c = a.comments.create!(content: "Hello World")
 
-   ```ruby
-   a = Article.first
-   # rails automatically populate commentable_type
-   c = a.comments.create!(content: "Hello World")
-
-   # returns associated record which is an Article
-   c.commentable
-   ```
+# returns associated record which is an Article
+c.commentable
+```

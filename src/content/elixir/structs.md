@@ -5,11 +5,8 @@ path: '/elixir/structs'
 date: '2021-03-07'
 ---
 
-#### Structs
-
-built on top of maps that provide compile checks and default values
-
-take the name of the module they are defined
+- built on top of maps that provide compile checks and default values
+- take the name of the module they are defined
 
 ```elixir
 defmodule User do

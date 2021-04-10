@@ -5,21 +5,15 @@ path: '/elixir/processes'
 date: '2021-03-07'
 ---
 
-#### Processes
-
-very lightweight
-
-each process is isolated from each other
-
-a failure in a process will never crash or corrupt
-
-another process
+- very lightweight
+- each process is isolated from each other
+- a failure in a process will never crash or corrupt another process
+- a process can be used to add state
 
 #### spawn
 
-you can create a process using `spawn` function
-
-its defined in `Kernel` module
+- you can create a process using `spawn` function
+- defined in `Kernel` module
 
 ```elixir
 # run the function in another process
@@ -41,4 +35,4 @@ iex> receive do
 
 #### spawn_link
 
-allows process to establish relationship in case of failure
+- allows process to establish relationship in case of failure

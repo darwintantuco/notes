@@ -5,11 +5,12 @@ path: '/ecto/query'
 date: '2021-03-12'
 ---
 
-#### Ecto Query
-
-uses Elixir macros to create DSL
-
-it's possible to query a table using table names (without a schema)
+- uses Elixir macros to create DSL
+- it's possible to query a table using table names (without a schema)
+- pin operator protects us from SQL injection
+- value added by the pin operator is converted to SQL query parameter
+- by default Ecto combines `where` clauses with `and`
+- you can also use `or` or `or_where` keyword
 
 ```elixir
 posts_by_tony = from post in Post,
@@ -33,7 +34,7 @@ query = from(user in User, join: post in assoc(user, :posts),
 Repo.all(query)
 ```
 
-#### Macro / expression syntax
+#### Macro / Expression syntax
 
 ```elixir
 title = "Post 1"
@@ -48,16 +49,6 @@ query =
 Repo.all(query)
 ```
 
-pin operator protects us from SQL injection
-
-value added by the pin operator is converted to SQL query parameter
-
-by default Ecto combines `where` clauses with `and`
-
-you can also use `or` or `or_where` keyword
-
-#### Composing queries
-
 #### See generated SQL
 
 ```elixir
@@ -68,7 +59,7 @@ Repo.to_sql(:all, query)
 
 #### Executing raw SQL queries
 
-avoid this as much as possible
+- avoid this as much as possible
 
 ```elixir
 Ecto.Adapters.SQL.query(Repo, "select * from users")

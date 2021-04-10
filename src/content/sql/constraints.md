@@ -5,8 +5,5 @@ path: '/sql/constraints'
 date: '2021-03-17'
 ---
 
-#### Constraints
-
-ensure column values are unique
-
-can help prevent NULL values
+- ensure column values are unique
+- can help prevent NULL values

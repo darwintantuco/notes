@@ -7,19 +7,19 @@ date: '2020-05-11'
 
 #### ls
 
-short for list
+- short for list
 
 #### cd
 
-short for change directory
+- short for change directory
 
 #### pwd
 
-short for print working directory
+- short for print working directory
 
 #### cp
 
-short for copy
+- short for copy
 
 #### rm
 

@@ -1,7 +1,7 @@
 ---
 category: 'Typescript'
 title: 'Interface'
-path: '/typescript/basic-types'
+path: '/typescript/interface'
 date: '2021-03-14'
 ---
 

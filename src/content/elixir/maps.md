@@ -5,8 +5,6 @@ path: '/elixir/maps'
 date: '2021-03-07'
 ---
 
-#### Maps
-
 - unordered collection of key / value pairs
 - allow any value as key
 
@@ -22,8 +20,9 @@ map[n]
 
 #### Accessing
 
-[] - returns nil when key is not found
-. - raises an error when key is not found
+`[]` - returns nil when key is not found
+
+`.` - raises an error when key is not found
 
 ```elixir
 # alternate syntax when keys are atoms
@@ -32,7 +31,7 @@ conv[:method]
 conv.method
 ```
 
-prefer pattern matching or map.field syntax over Map module functions
+> prefer pattern matching or map.field syntax over Map module functions
 
 ##### Updating
 

@@ -5,8 +5,6 @@ path: '/elixir/basic-types'
 date: '2021-03-14'
 ---
 
-#### Basic Types
-
 #### Booleans
 
 true / false
@@ -19,11 +17,11 @@ all other values are truthy
 
 constants
 
-##### Aliases
+#### Aliases
 
-- capitalized identifier (String, List, etc)
+- capitalized identifier (`String`)
 - converted to atom during compilation
-- String alias translates by default to the atom `:"Elixir.String"`
+- `String` alias translates by default to the atom `:"Elixir.String"`
 
 ```elixir
 String == :"Elixir.String"

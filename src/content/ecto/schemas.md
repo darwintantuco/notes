@@ -7,7 +7,7 @@ date: '2021-03-12'
 
 #### Schemas
 
-map data from any source to elixir code
+- map data from any source to elixir code
 
 #### Advantage of using schemas in queries
 
@@ -47,15 +47,13 @@ end
 
 #### Nested Associations
 
-you can use `through`
-
-`belongs_to` doesn't work in nested associations
+- you can use `through`
+- `belongs_to` doesn't work in nested associations
 
 #### Many to many associations
 
-needs an extra table / join table
-
-`join_through` option tells ecto where to find the join table
+- needs an extra table / join table
+- `join_through` option tells ecto where to find the join table
 
 #### Loading Associations
 

@@ -5,9 +5,7 @@ path: '/sql/delete'
 date: '2021-03-17'
 ---
 
-#### delete
-
-removes one or more rows from one table
+- removes one or more rows from one table
 
 ```sql
 -- delete all rows in users table

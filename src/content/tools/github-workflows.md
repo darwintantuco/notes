@@ -5,9 +5,7 @@ path: '/tools/github-workflows'
 date: '2020-10-13'
 ---
 
-#### Sample configs
-
-##### Basic elixir/phoenix
+#### Sample config for elixir / phoenix
 
 ```yml
 on: push

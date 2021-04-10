@@ -5,7 +5,7 @@ path: '/javascript/functions'
 date: '2021-03-20'
 ---
 
-a special type of object
+- a special type of object
 
 ```javascript
 function hey() {
@@ -39,13 +39,12 @@ const hey = function () {
 
 #### Function Overloading
 
-not present in js
+- not present in js
 
 #### Function Constructor
 
-a function that is used to construct objects
-
-by convention, name should start with an uppercase letter
+- a function that is used to construct objects
+- by convention, name should start with an uppercase letter
 
 ```javascript
 function Person(firstname, lastname) {
@@ -58,7 +57,7 @@ var tony = new Person('Tony', 'Stark')
 
 #### Default Arguments
 
-ES6
+- ES6
 
 ```javascript
 function computeBill(total, tax = 0.15) {

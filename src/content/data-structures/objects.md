@@ -1,7 +1,7 @@
 ---
-category: 'Data Structure'
+category: 'Data Structures'
 title: 'Objects'
-path: '/data-structure/objects'
+path: '/data-structures/objects'
 date: '2020-05-08'
 ---
 

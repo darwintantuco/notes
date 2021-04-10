@@ -7,7 +7,11 @@ date: '2021-03-07'
 
 #### Comprehensions
 
-3 parts: generators, filters and collectables
+3 parts
+
+1. generators
+1. filters
+1. collectables
 
 ```elixir
 for n <- [1, 2, 3], do: n * n

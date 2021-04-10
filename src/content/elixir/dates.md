@@ -1,12 +1,14 @@
 ---
 category: 'Elixir'
-title: 'Datesj'
+title: 'Dates'
 path: '/elixir/dates'
 date: '2021-03-14'
 ---
 
-#### Dates
+#### NaiveDateTime
 
-`NaiveDateTime` contains date and time
+contains date and time
 
-`DateTime` contains date and time including time zone
+#### DateTime
+
+contains date and time including time zone

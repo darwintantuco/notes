@@ -5,13 +5,11 @@ path: '/javascript/this'
 date: '2021-03-19'
 ---
 
-value depends on where and how the function is called
+- value depends on where and how the function is called
 
 #### object
 
-when a function is attach to an object
-
-`this` becomes the object
+- when a function is attach to an object, `this` becomes the object
 
 ```javascript
 var user = {
@@ -28,4 +26,4 @@ user.firstname
 
 #### call, apply and bind
 
-can be use to control the value of `this`
+- can be use to control the value of `this`

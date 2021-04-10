@@ -7,7 +7,7 @@ date: '2020-05-19'
 
 #### form_with
 
-- can be used to replace **form_for** and **form_tag**
+- can be used to replace `form_for` and `form_tag`
 
 ```haml
 = form_with(model: admin_blog, local: true) do |f|
