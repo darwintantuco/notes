@@ -13,7 +13,9 @@ const Sidebar = (): JSX.Element => {
     allMarkdownRemark: { edges },
   } = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___title] }) {
+      allMarkdownRemark(
+        sort: { order: ASC, fields: [frontmatter___category] }
+      ) {
         edges {
           node {
             id

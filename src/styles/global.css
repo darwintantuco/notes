@@ -8,3 +8,22 @@
   font-size: 14px;
   margin-bottom: 32px;
 }
+
+.markdown-body ul {
+  list-style-type: circle;
+  padding-left: 24px;
+}
+
+.markdown-body ol {
+  padding: 0;
+  list-style: none;
+  counter-reset: counter;
+}
+
+.markdown-body ol li {
+  counter-increment: counter;
+}
+
+.markdown-body ol li::before {
+  content: counter(counter) '. ';
+}
