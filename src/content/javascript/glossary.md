@@ -41,14 +41,6 @@ window.hey()
 
 - one command at a time
 
-#### Synchronous
-
-- one at a time and in order
-
-#### Asynchronous
-
-- more than one at a time
-
 #### Scope
 
 - where a variable is available in code

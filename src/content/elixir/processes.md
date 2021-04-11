@@ -6,9 +6,12 @@ date: '2021-03-07'
 ---
 
 - very lightweight
-- each process is isolated from each other
-- a failure in a process will never crash or corrupt another process
-- a process can be used to add state
+- each process is isolated from each other, a failure in a process will never crash or corrupt another process
+- Erlang VM knows how to run them concurrently and in parallel
+
+#### Let It Crash
+
+focus on how the system can recover from crashes
 
 #### spawn
 

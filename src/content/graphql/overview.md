@@ -25,12 +25,6 @@ date: '2020-12-05'
 +---------------+   (JSON document) +----------------+
 ```
 
-#### Schema
-
-- describe the shape of your data as graph
-- defines queries, mutations and subscriptions
-- client can instrospect the schema to know what's possible
-
 #### GraphiQL Tool
 
 - runs in the browser
