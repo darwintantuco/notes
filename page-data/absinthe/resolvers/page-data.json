@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-note-template-tsx","path":"/absinthe/resolvers","result":{"data":{"markdownRemark":{"html":"<ul>\n<li>trigger business logic</li>\n<li>ideally it should call context functions</li>\n</ul>","frontmatter":{"date":"April 11, 2021","path":"/absinthe/resolvers","title":"Resolvers","category":"Absinthe"}}},"pageContext":{}}}
