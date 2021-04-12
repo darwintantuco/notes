@@ -15,7 +15,8 @@ date: '2021-03-12'
 ```bash
 $ mix ecto.gen.migration add_users_and_posts
 $ mix ecto.gen.migration add_users_and_posts -r EctoExample.Repo
-$ mix ecto.gen.migration add_users_and_posts --migrations-path=priv/repo/manual_migrations
+$ mix ecto.gen.migration add_users_and_posts \
+  --migrations-path=priv/repo/manual_migrations
 ```
 
 ```bash
@@ -33,6 +34,8 @@ $ mix ecto.rollback -n 3
 $ mix ecto.migrate --migrations-path=priv/repo/ecto_example/manual_migrations
 ```
 
+#### Adding new table with fields
+
 ```elixir
 defmodule EctoExample.Repo.Migrations.AddUsersAndPosts do
   use Ecto.Migration
@@ -48,7 +51,7 @@ defmodule EctoExample.Repo.Migrations.AddUsersAndPosts do
     create table("posts") do
       add(:title, :string, null: false)
       add(:body, :text)
-      add(:user_id, references("users"))
+      add(:user_id, references("users"), null: false)
 
       timestamps()
     end
@@ -58,6 +61,27 @@ defmodule EctoExample.Repo.Migrations.AddUsersAndPosts do
     create(unique_index("posts", :title))
   end
 end
+```
+
+#### Update an existing column to be nullable
+
+```elixir
+defmodule EctoExample.Repo.Migrations.UpdateUsers do
+  use Ecto.Migration
+
+  def change do
+    alter table("users") do
+      modify(:firstname, :string, null: true, from: :string)
+    end
+
+    alter table("posts") do
+      modify(:user_id, references("users"), null: true,
+        from: references("users")
+      )
+    end
+  end
+end
+
 ```
 
 #### Up & Down Operations
@@ -81,7 +105,6 @@ defmodule Nexus.Repo.Migrations.RemoveAgeFromUser do
     end
   end
 end
-
 ```
 
 #### flush()
