@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://darwintantuco.com/notes/absinthe/abstract-types</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/absinthe/middlewares</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/absinthe/mutations</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/absinthe/subscriptions</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/absinthe/custom-scalar-types</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/absinthe/abstract-types</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/absinthe/enum-type</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/absinthe/input-object-type</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/absinthe/object-type</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/absinthe/queries</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/absinthe/resolvers</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/computer-science/asynchronous</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/computer-science/synchronous</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/elixir/stream</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/graphql/fragments</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/graphql/schema</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://darwintantuco.com/notes/computer-science/synchronous</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/authentication/auth-tokens</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/javascript/iife</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/javascript/json</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -95,8 +98,8 @@
 <url> <loc>https://darwintantuco.com/notes/rails/best-practices</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/rails/conventions</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/rails/credentials</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://darwintantuco.com/notes/rails/setting-up-new-project</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/rails/troubleshooting</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://darwintantuco.com/notes/rails/setting-up-new-project</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/css/adding-css-to-html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/css/best-practices</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://darwintantuco.com/notes/javascript/arrow-functions</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
