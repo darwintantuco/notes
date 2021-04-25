@@ -19,6 +19,7 @@ query {
 ```
 
 ```elixir
+# schema
 scalar :date do
   parse fn input ->
     case Date.from_iso8601(input.value) do
