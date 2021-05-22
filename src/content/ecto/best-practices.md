@@ -94,7 +94,8 @@ user =
 # adds a new post
 user
 |> Ecto.Changeset.change()
-|> Ecto.Changeset.put_assoc(:posts, [%Post{title: "Awesome title", body: "Awesome body"} | user.posts])
+|> Ecto.Changeset.put_assoc(:posts,
+  [%Post{title: "Awesome title", body: "Awesome body"} | user.posts])
 |> Repo.update()
 ```
 

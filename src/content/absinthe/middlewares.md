@@ -8,12 +8,6 @@ date: '2021-04-25'
 - reuse code or logic between resolvers
 - Absinthe calls middlewares in order
 
-#### Handle changeset errors
-
-```elixir
-# TODO
-```
-
 #### Adding a middleware
 
 - Use `middleware/2` macro in `field`
@@ -60,6 +54,14 @@ you can use this if you want to resolve a value using string keys
 def middleware(middleware, field, object) do
   new_middleware = {Absinthe.Middleware.MapGet, to_string(field.identifier)}
 
-  Absinthe.Schema.replace_default(new_middleware, field, object)
+  Absinthe.Schema.replace_default(middleware, new_middleware, field, object)
 end
+```
+
+#### Handle changeset errors
+
+Absinthe doesn't know how to parse changesets
+
+```elixir
+# TODO
 ```
