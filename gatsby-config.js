@@ -109,6 +109,5 @@ module.exports = {
     },
     'gatsby-plugin-antd',
     'gatsby-plugin-sitemap',
-    'gatsby-plugin-remove-trailing-slashes',
   ],
 }
