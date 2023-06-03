@@ -21,6 +21,7 @@ Possible causes:
 
 - Locate postgres directory
   - on osx using homebrew: /usr/local/var/postgres/
+  - on osx using homebrew and m1 chip: /opt/homebrew/var/postgres/
   - others: usr/var/postgres
 - Remove .pid
   ```shell
