@@ -43,7 +43,7 @@
     "gatsby-remark-autolink-headers": "^2.2.4",
     "gatsby-remark-prismjs": "^3.4.5",
     "gatsby-source-filesystem": "^2.2.5",
-    "gatsby-transformer-remark": "^2.7.5",
+    "gatsby-transformer-remark": "^5.25.1",
     "github-markdown-css": "^4.0.0",
     "postcss": "^8.1.14",
     "prismjs": "^1.20.0",
