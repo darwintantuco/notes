@@ -1,5 +1,2 @@
 User-agent: *
-Disallow: /notes/
-Disallow: /notes/*
-Sitemap: https://darwintantuco.com/sitemap.xml
-Host: https://darwintantuco.com
+Disallow: /
