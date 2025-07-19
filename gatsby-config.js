@@ -21,7 +21,6 @@ module.exports = {
         path: `${__dirname}/src/content`,
       },
     },
-    'gatsby-transformer-remark',
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -92,12 +91,6 @@ module.exports = {
               escapeEntities: {},
             },
           },
-          {
-            resolve: 'gatsby-plugin-robots-txt',
-            options: {
-              policy: [{ userAgent: '*', disallow: ['/notes/', '/notes/*'] }],
-            },
-          },
         ],
       },
     },
@@ -108,6 +101,5 @@ module.exports = {
       },
     },
     'gatsby-plugin-antd',
-    'gatsby-plugin-sitemap',
   ],
 }

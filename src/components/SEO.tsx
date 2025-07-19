@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 const SEO = (): JSX.Element => (
   <Helmet defer={false} defaultTitle={'My personal notes'}>
     <html lang='en' />
+    <meta name='robots' content='noindex, nofollow' />
     <meta
       name='description'
       content='Collection of notes I find useful in day to day work.'
